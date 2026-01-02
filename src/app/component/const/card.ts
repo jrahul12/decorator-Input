@@ -1,6 +1,7 @@
-import { Icard, Iimage } from "../model/type";
+import { Icard1 } from "../model/card";
 
-export const cardData: Icard[] = [{
+export const postsArr :Icard1[]= [
+  {
     userId: 1,
     id: 1,
     title: 'are or make repel provide blinded except option reprehend',
@@ -611,12 +612,5 @@ export const cardData: Icard[] = [{
     id: 100,
     title: 'but for that labor may be accomplished by these',
     body: 'cupidity which is from the ways they do not know how to solve the pleasure error and so said in the sailor who is less great and distinction him we accuse reason error or'
-  }]
-
-export const imageData: Iimage[] = [
-    { id: 1, title: 'Bike 1', content: 'Detailed description of Bike 1 with performance and design highlights.', image: 'https://picsum.photos/300/200?random=1' },
-    { id: 2, title: 'Bike 2', content: 'Detailed description of Bike 2 with performance and design highlights.', image: 'https://picsum.photos/300/200?random=2' },
-    { id: 3, title: 'Bike 3', content: 'Detailed description of Bike 3 with performance and design highlights.', image: 'https://picsum.photos/300/200?random=3' },
-
+  }
 ]
-

@@ -12,13 +12,25 @@ import { MatCardModule } from "@angular/material/card";
 import { ImageComponent } from './image/image.component';
 import { MainComponent } from './main/main.component';
 import { CardComponent } from './card/card.component';
+import { MobileDashboardComponent } from './component/mobile-dashboard/mobile-dashboard.component';
+import { MobileCardComponent } from './component/mobile-card/mobile-card.component';
+import { MoviesDashboardComponent } from './component/movies-dashboard/movies-dashboard.component';
+import { MoviesCardComponent } from './component/movies-card/movies-card.component';
+import { CardDashboardComponent } from './component/card-dashboard/card-dashboard.component';
+import { CardPosterComponent } from './component/card-poster/card-poster.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageComponent,
     MainComponent,
-    CardComponent
+    CardComponent,
+    MobileDashboardComponent,
+    MobileCardComponent,
+    MoviesDashboardComponent,
+    MoviesCardComponent,
+    CardDashboardComponent,
+    CardPosterComponent
   ],
   imports: [
     BrowserModule,

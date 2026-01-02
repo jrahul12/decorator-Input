@@ -1,0 +1,25 @@
+<mat-card class="movie-card">
+    <div class="img-wrapper">
+        <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500' + movie.backdrop_path" alt="movie image" />
+
+        <div class="overlay">
+            <p>{{ movie.overview }}</p>
+        </div>
+    </div>
+
+    <mat-card-content class="content">
+        <h3>{{ movie.title || movie.original_title }}</h3>
+        <h2 class="rating" [ngClass]="{
+        'badge-success':movie.vote_average>=7,
+        'badge-warning':movie.vote_average>=4&&movie.vote_average<7,
+        'badge-danger':movie.vote_average<4        
+    }">
+            {{ movie.vote_average }}
+        </h2>
+    </mat-card-content>
+
+    <mat-card-actions class="d-flex justify-content-between">
+        <button mat-raised-button color="primary">LIKE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+    </mat-card-actions>
+</mat-card>

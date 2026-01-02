@@ -1,0 +1,8 @@
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let movieObj of moviesArr">
+            <app-movies-card [movie]="movieObj"></app-movies-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="card w-100 mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 text-center">
+                        <img [src]="mobile.image || 'https://picsum.photos/300/200'" class="img-fluid" width="400"
+                            height="400" alt="mobile image">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-end mb-2">
+                            <h2 [ngClass]="{
+                  'bg-success': mobile.rating >= 3,
+                  'bg-warning': mobile.rating >= 2 && mobile.rating < 3,
+                  'bg-danger': mobile.rating < 2
+                }">{{ mobile.rating }}</h2>
+                        </div>
+                        <h3>BRAND :- {{ mobile.brand }}</h3>
+                        <h4>NAME :- {{ mobile.name }}</h4>
+                        <p>{{ mobile.features }}</p>
+                        <h2 class="price text-success">${{ mobile.price }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
