@@ -1,6 +1,6 @@
 import { Imobile } from "../model/mobile";
 
-export let mobileProducts:Imobile[]= [
+export let mobileProducts: Imobile[] = [
   {
     id: 1,
     name: 'iPhone 13',
